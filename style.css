@@ -1,0 +1,140 @@
+/* Farbpalette & Variablen */
+:root {
+    --dark-green: #0a3321;
+    --medium-green: #144d34;
+    --neon-green: #bfff41;
+    --light-bg: #f5f8f2;
+    --white: #ffffff;
+    --text-dark: #0a3321;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+/* Sidebar Design */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--dark-green) 0%, #051a11 100%);
+    color: var(--neon-green);
+    padding: 30px 20px;
+    position: fixed;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    display: block;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(191, 255, 65, 0.1);
+    color: var(--neon-green);
+}
+
+.sidebar a.active {
+    background-color: var(--neon-green);
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+/* Hauptbereich (Content) */
+.content {
+    margin-left: 280px;
+    padding: 60px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--dark-green);
+    margin-bottom: 40px;
+}
+
+/* Blog-Einträge / Karten */
+.entry {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    max-width: 900px;
+    border-left: 5px solid var(--neon-green);
+}
+
+.entry h2 {
+    color: var(--medium-green);
+    margin-top: 0;
+}
+
+/* Code-Beispiele */
+pre {
+    background: var(--dark-green);
+    color: var(--neon-green);
+    padding: 25px;
+    border-radius: 12px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Platzhalter für Bilder */
+.image-placeholder {
+    background-color: #e9f2e6;
+    border: 2px dashed var(--neon-green);
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--medium-green);
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Responsive Anpassung für Handys */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+    .content {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+}
