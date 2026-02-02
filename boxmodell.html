@@ -26,13 +26,13 @@
     <article class="entry">
         <h1>6. Das Box-Modell</h1>
         <p>Jedes Element ist eine Box. Sie besteht aus Content, Padding (innen), Border (Rand) und Margin (außen).</p>
-        <div class="image-placeholder"></div>
         <pre><code>div {
   margin: 20px;
   padding: 10px;
   border: 1px solid green;
 }</code></pre>
     </article>
+    <article class="entry"><h2>6. Box-Modell</h2> <p>Das Box-Modell ist eines der wichtigsten Konzepte, die man verstehen muss, um Layouts zu bauen. In CSS ist nämlich alles eine Box – egal ob es ein Bild, eine Überschrift oder ein ganzer Textblock ist. Jede dieser Boxen besteht aus vier Schichten, die man sich wie eine Zwiebel vorstellen kann. Ganz innen ist der Inhalt (Content), also zum Beispiel dein Text. Danach kommt das Padding (Innenabstand). Das ist wie ein Polster zwischen dem Text und dem Rand der Box. Wenn dein Text zu nah am Rand klebt, erhöhst du das Padding. Als Nächstes kommt der Border (Rahmen). Das ist eine Linie, die man sichtbar machen kann, um die Box abzugrenzen. Ganz außen liegt der Margin (Außenabstand). Der Margin ist der Sicherheitsabstand zur nächsten Box. Wenn du also willst, dass zwei Bilder nicht direkt aneinanderstoßen, gibst du ihnen einen Margin. Ein klassischer Fehler bei Anfängern ist, dass sie sich wundern, warum eine Box plötzlich breiter ist als geplant. Das liegt daran, dass der Browser standardmäßig den Inhalt, das Padding und den Rahmen zusammenrechnet. Mit einem speziellen CSS-Befehl (box-sizing: border-box) kann man das aber vereinfachen, sodass Padding und Rahmen "nach innen" gerechnet werden und die Box genau so groß bleibt, wie man es im Layout festgelegt hat.</p></article>
 </main>
 
 </body>
